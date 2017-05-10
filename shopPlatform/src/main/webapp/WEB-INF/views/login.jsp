@@ -1,34 +1,30 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src="./resources/js/login.js"></script>
+<script type="type/javascript" src="./resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="./resources/js/tologin.js"></script>
 <title>登录</title>
 </head>
-<body>
-	<form id="userForm">
-    	<br/>
-        <table width="100%" align="center" border=0>
-        	<tbody>
+<body>   	
+        <table width="100%" align="center" border=0>       	
             	<tr>
                 	<td align="right" width="15%"><strong>用户名：</strong></td>
-                    <td width="57%"><input id="username" onblur="checkUsername()"><span id="username_notice" style="color:#F00"/>*</span></td>                   
+                    <td width="57%"><input id="username" type="text" name="username"></td>                   
                 </tr>
                 <tr>
                 	<td align="right" width="15%"><strong>密码：</strong></td>
-                    <td width="57%"><input type="password" name="password" id="password" onblur="checkPassword()">
-                    	<span id="password_notice" style="color:#F00">*</span>
+                    <td width="57%"><input type="password" name="password" id="password">
+                    	
                     </td>     
-                </tr>             
-               
+                </tr>                           
                <tr>
                		<td><input type="hidden" value="act_register" name="act"></td>
-                    <td><input type="button" id="login" value="登录" onclick="success()"></td>
-               </tr>
-            </tbody>
-        </table>
-    </form>
+                    <td><input type="button" id="login" value="登录"  onclick="willlogin()"></td>
+               </tr>          
+        </table>    
 </body>
 </html>

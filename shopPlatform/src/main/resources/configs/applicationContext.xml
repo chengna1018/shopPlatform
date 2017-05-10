@@ -12,8 +12,8 @@
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-	<!-- mybatis+事务 -->
+	<!-- mybatis+事务 
 	<import resource="spring-mybatis.xml" />
-
+	-->
 
 </beans>
