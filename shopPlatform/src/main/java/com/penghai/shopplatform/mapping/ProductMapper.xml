@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.penghai.shopplatform.dao.ProductMapper">
+	<resultMap id="BaseResultMap" type="com.penghai.shopplatform.bo.Product">
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<result column="category" property="category" jdbcType="VARCHAR" />
+		<result column="productname" property="productname" jdbcType="VARCHAR" />
+		<result column="price" property="price" jdbcType="VARCHAR" />
+		<result column="shop" property="shop" jdbcType="VARCHAR" />
+		<result column="evaluate" property="evaluate" jdbcType="VARCHAR" />
+		<result column="picture" property="picture" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<select id="getAllProduct" resultType="com.penghai.shopplatform.bo.Product" >
+         select  * from products
+     </select>
+	<!-- 分页使用SQL -->
+     <select id="getProductByPage"  resultType="com.penghai.shopplatform.bo.Product" >
+         select * from products limit #{0},#{1}
+     </select>
+	
+</mapper>

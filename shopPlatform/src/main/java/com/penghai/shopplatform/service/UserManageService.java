@@ -33,4 +33,16 @@ public interface UserManageService {
 	 * @return
 	 */
 	public JSONObject changeMessage(Map<String, Object> map);
+	
+	/**
+	 * 获取所有商品
+	 */
+	public JSONObject getSearchMessage(Map<String, Object> map);
+	/**
+	 * 根据查询进行分页
+	 */
+	public JSONObject fenYenPage(Map<String, Object> map);
+	
+	
+	
 }

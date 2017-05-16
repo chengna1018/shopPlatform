@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/* body{
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
+}
+a{ color: rgba(255, 255, 255, 0.6);outline: none;text-decoration: none;-webkit-transition: 0.2s;transition: 0.2s;}
+a:hover,a:focus{color:#74777b;text-decoration: none;}
+a {
+    text-decoration: none;
+}*/
+#page {
+	height: 50px;
+	display: table;
+	margin: 0 auto;
+	position: absolute;
+	left: 700px;
+	top: 730px;
+}
+
+.page {
+	text-align: center;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.pagingUl {
+	float: right;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	height: 30px;
+}
+
+.pagingUl li {
+	float: left;
+	width: 30px;
+	height: 30px;
+	background: #00777f;
+	text-align: center;
+	margin-right: 5px;
+	border-radius: 5px
+}
+
+.pagingUl li a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 32px;
+	color: #000;
+	font-size: 14px;
+	border-radius: 5px
+}
+
+.prv, .next {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	background: #00777f;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+
+.prv {
+	margin-right: 10px;
+}
+
+.first, .last {
+	width: 30px;
+	height: 30px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	background: #00777f;
+	padding: 0 5px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.prv:hover, .next:hover, .first:hover, .last:hover, .pagingUl li a:hover,
+	.activP {
+	background: #666;
+}
+
+.img {
+	weight: 200;
+	height: 200;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.cent {
+	background: white;
+	height: 200px;
+	width: 100px;
+}
+
+.cs {
+	width: 500px;
+	height: 500px;
+	background: whitesmoke;
+	top: 0px;
+	position: absolute;
+	opacity: 0;
+	display: black;
+	font-size: 12px;
+	transition: 0.3s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+}
+
+.cent:hover .cs {
+	color: black;
+	opacity: 1;
+	opacity: 0.8;
+}
+
+div.img {
+	margin: 3px;
+	border: 0px solid #bebebe;
+	height: 350px;
+	width: 350px;
+	float: left;
+	text-align: center;
+}
+
+div.img img {
+	display: inline;
+	margin-top: 10px;
+	height: 200px;
+	width: 200px;
+	vertical-align: middle;
+}
+
+div.img a:hover img {
+	border: 2px #c0c0c0;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+
+div.desc {
+	text-align: left;
+	font-weight: normal;
+	width: 150px;
+	font-size: 12px;
+	margin: 10px 5px 10px 5px;
+}

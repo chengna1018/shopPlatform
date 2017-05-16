@@ -49,7 +49,14 @@ public class UserManageServiceImpl implements UserManageService{
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-	
-
+	//获用户查询商品
+	public JSONObject getSearchMessage(Map<String, Object> map) {
+		JSONObject result=RESTEasyClientPost.requestWithClient(map, commonInterface.URL3);
+		return result;
+	}
+	//商品分页
+	public JSONObject fenYenPage(Map<String, Object> map) {
+		JSONObject result=RESTEasyClientPost.requestWithClient(map, commonInterface.URL3);
+		return null;
+	}
 }

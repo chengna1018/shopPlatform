@@ -9,10 +9,7 @@ id="WebApp_ID" version="3.0">
 		<param-name>log4jConfigLocation</param-name>
 		<param-value>classpath:/configs/log4j.properties</param-value>
 	</context-param>
-	<context-param>
-		<param-name>webAppRootKey</param-name>
-		<param-value>webNameValue.root</param-value>
-	</context-param>
+	
 	
 	<!-- spring对字符集进行过滤 -->
 	<filter>
