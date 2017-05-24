@@ -57,6 +57,8 @@ public class UserManageServiceImpl implements UserManageService{
 	//…Ã∆∑∑÷“≥
 	public JSONObject fenYenPage(Map<String, Object> map) {
 		JSONObject result=RESTEasyClientPost.requestWithClient(map, commonInterface.URL3);
-		return null;
+		return result;
 	}
+	
+	
 }

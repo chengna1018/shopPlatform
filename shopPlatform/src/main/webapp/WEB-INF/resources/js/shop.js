@@ -15,7 +15,7 @@ function getRootPath(){
  function shop(){
 	 var search_content=$("#word").val();
 	 var page=$("#page").val();
-	
+	 
 	
 	 alert(search_content);
 	/* if(search_content==null || search_content==""){

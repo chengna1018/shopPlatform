@@ -23,10 +23,10 @@ function willlogin(){
 		type:"post",
 		data:{username:username,password:password},
 		dataType:"json",
-		url:getRootPath()+"/success",
+		url:getRootPath()+"success",
 		success:function(param){
 			if(param.success=="4"){
-				window.location.href="${pageContext.request.contextPath}/success";
+				window.location.href=getRootPath()+'/shop';
 			}else if(param.success=="5"){
 				alert(param.message);
 			}

@@ -36,7 +36,7 @@ function login(){
 				success: function(param){
 					alert(param.success);
 					if(param.success=="0") {
-						window.location.href="http://localhost:8080/shopPlatform/login";
+						window.location.href=getRootPath()+'/login';
 						//document.getElementById("username_notice").innerHTML=param.message;
 						//info(username_notice,param.message);
 						}else if(param.success=="1"){

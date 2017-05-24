@@ -22,6 +22,7 @@ public class RESTEasyClientPost {
 		JSONObject jsonObject=new JSONObject();
 		try{
 			Response response = target.request().post(Entity.entity(JSON.toJSONString(map), MediaType.APPLICATION_JSON_TYPE));
+			System.out.println("client"+JSON.toJSONString(map));
 			if(response.getStatus()!=200){
 				throw new RuntimeException("Failed with HTTP error code: " +response.getStatus());
 			}

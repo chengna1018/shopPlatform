@@ -8,7 +8,6 @@ public class CommonInterface {
 		String URL2="http://10.10.10.57:8080/intershop/rest/user/login";
 		//用户查询商品
 		String URL3="http://10.10.10.57:8080/intershop/rest/select/alldata";
-		//商品分页查询
-		String URL4="http://10.10.10.57:8080/intershop/rest/select/alldata";
+		
 	}
 }
